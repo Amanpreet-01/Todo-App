@@ -6,10 +6,7 @@ function Navbar() {
         <div className="logo">
             <span>iTask</span>
         </div>
-        <ul className="flex">
-            <li>Home</li>
-            <li>Your tasks</li>
-        </ul>
+        
     </nav>
   )
 }

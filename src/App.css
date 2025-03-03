@@ -1,42 +1,118 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Heading */
+h2 {
+  color: #343a40;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Add Todo Section */
+.addTodo {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.addTodo input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-.card {
-  padding: 2em;
+.addTodo button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.read-the-docs {
-  color: #888;
+.addTodo button:hover {
+  background-color: #0056b3;
+}
+
+/* Todos List */
+.todos {
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* Todo Item */
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f3f5;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.todo .text {
+  flex: 1;
+  font-size: 16px;
+  margin-left: 10px;
+  color: #212529;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.buttons button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.buttons button:first-child {
+  background-color: #ffc107;
+  color: black;
+}
+
+.buttons button:first-child:hover {
+  background-color: #e0a800;
+}
+
+.buttons button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.buttons button:last-child:hover {
+  background-color: #c82333;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
 }
