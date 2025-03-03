@@ -78,7 +78,7 @@ function App() {
       <div className="container">
         <div className="addTodo">
           <h2>Add a todo</h2>
-          <input onChange={handleChange} value={todo} type="text" />
+          <input onChange={handleChange} value={todo} type="text"  placeholder='Enter your task'/>
           <button onClick={handleAdd} >Save</button>
         </div>
       <input onChange={toggleFinish} type="checkbox" checked={showFinished}  /> Show Finished
@@ -98,8 +98,8 @@ function App() {
       />
       <div className="text">{item.todo}</div>
       <div className="buttons">
-        <button onClick={(e) => handleEdit(e, item.id)}>Edit</button>
-        <button onClick={(e) => handleDelete(e, item.id)}>Delete</button>
+        <button onClick={(e) => handleEdit(e, item.id)}><i className="fas fa-edit"></i></button>
+        <button onClick={(e) => handleDelete(e, item.id)}><i className="fas fa-trash-alt"></i></button>
       </div>
     </div>
   ))}
